@@ -1,0 +1,108 @@
+			*{
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				display: flex;
+				font-family: 'Nunito', sans-serif;
+			}
+			nav{
+				background-color: #8ABC9F80;
+				height: 100vh;
+				width: 280px;
+				position: fixed;
+				overflow: auto;				
+			}
+			.scroll-one a{
+				display: flex;
+				height: 50px;
+				border-top: 1px solid #999999;
+				padding-left: 15px;
+				text-decoration: none;
+				color: black;
+				align-items: center;
+			}
+			.scroll-one a:hover{
+				background-color: #C0CAC3;;
+			}			
+			nav h1{
+		        padding: 20px 0 20px 15px;
+		    }	
+	        .div-two{
+	        	padding: 0 35px 0;
+	        	width: calc(100% - 280px);
+	        	margin-left: 280px;
+	        	border-left: 3px solid black;
+	        	font-size: 18px;
+	        }		    					
+
+			h1:not(nav h1){
+	        	padding: 70px 0 35px;
+	        }
+	        #twentysix{
+	        	padding: 70px 0 10px;	
+	        }
+	        ul li:last-of-type{
+	        	padding: 0 0 30px;	
+	        }
+	        h2, h3{
+	        	padding-top: 35px;
+	        	padding-bottom: 30px;
+	        }
+	        .gray_bakcground_red_color{
+	        	background-color: #D3D3D3;
+	        	color: red;
+	        	padding-left: 5px;
+	        	padding-right: 5px;
+	        }
+	        .this_is_code{
+	        	background: #011627;
+	    		color: #d6deeb;
+	        	margin-top: 10px;
+	        	margin-bottom: 15px;	    		
+	        }
+	        .dont_worry{
+	        	background-color: #FFFFCC;
+	        	padding: 20px;
+	        }
+		    table {
+		      width: 100%;
+		      border-collapse: collapse;
+	          margin-top: 20px;
+	          margin-bottom: 30px;		      
+		    }
+		    th, td {
+		      border: 1px solid black;
+		      padding: 8px;
+		      background-color: white;
+		    }			      
+		    p{
+		    	line-height: 40px;
+		    }
+		    ul li{
+		    	margin-left: 40px;
+		    }
+			@media (max-width: 815px){
+				nav{
+					display: flex;
+					flex-direction: column;
+		        	height: 33.25vh;
+		        	width: 100%;	
+		        	background: #ddd;
+				}		
+				.scroll-one{
+					border: 2px solid black;
+					overflow: auto;
+				}
+				nav h1{
+					text-align: center;
+				}				
+				.div-two{
+					padding: 0 35px 0;
+		        	width: 100%;
+		        	margin-left: 0;	
+		        	margin-top: 33.25vh;
+		        	border-left: none;					
+				}
+			}		    

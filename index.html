@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+    	<h1>C++ Documentation</h1>
+    	<div class="scroll-one">
+	    	<a href="#one">Introduction</a>
+	    	<a href="#two">Why Use C++</a>
+	    	<a href="#three">Difference between C and C++</a>
+	    	<a href="#four">Get Started</a>
+	    	<a href="#five">C++ Syntax</a>
+	    	<a href="#six">C++ Output</a>
+	    	<a href="#seven">C++ Variables</a>
+	    	<a href="#eight">C++ Declare Multiple Variables</a>
+	    	<a href="#nine">C++ Identifiers</a>
+	    	<a href="#ten">C++ Constants</a>
+	    	<a href="#eleven">C++ User Input</a>
+	    	<a href="#twelve">C++ Data Types</a>
+	    	<a href="#thirteen">C++ Operators</a>
+	    	<a href="#fourteen">C++ If ... Else</a>
+	    	<a href="#fifteen">C++ Else</a>
+	    	<a href="#sixteen">C++ Else If</a>
+	    	<a href="#seventeen">C++ Short Hand If Else</a>
+	    	<a href="#nineteen">C++ Switch</a>
+	    	<a href="#tweenty">C++ While Loop</a>
+	    	<a href="#tweenty_one">C++ Do/While Loop</a>
+	    	<a href="#tweenty_two">C++ For Loop</a>
+	    	<a href="#tweenty_three">C++ Break and Continue</a>
+	    	<a href="#tweenty_four">C++ Arrays</a>
+	    	<a href="#tweenty_five">C++ Functions</a>
+	    	<a href="#tweenty_six">Reference</a>
+    	</div>
+    </nav>
+	<div class="div-two">
+            <h1 id="one">Introduction</h1>
+            <p>C++ is a popular programming language.</p>
+            <p>C++ is used to create computer programs, and is one of the most used language in game development.</p>
+            <p>C++ is a cross-platform language that can be used to create high-performance applications.</p>
+            <p>C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
+            <p>C++ gives programmers a high level of control over system resources and memory</p>
+            <p>The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20.</p>
+            
+
+            <h1 id="two">Why Use C++</h1>
+            <p>C++ is one of the world's most popular programming languages.</p>
+            <p>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</p>
+            <p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+            <p>C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</p>
+            <p>C++ is fun and easy to learn!</p>
+            <p>As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa.</p>
+
+
+            <h1 id="three">Difference between C and C++</h1>
+            <p>C++ was developed as an extension of C, and both languages have almost the same syntax.</p>
+            <p>The main difference between C and C++ is that C++ support classes and objects, while C does not.</p>
+
+
+            <h1 id="four">Get Started</h1>
+            <p>To start using C++, you need two things:</p>
+                <ul>
+                    <li>A text editor, like Notepad, to write C++ code</li>
+                    <li>A compiler, like GCC, to translate the C++ code into a language that the computer will understand</li>
+                </ul>
+            <p>There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).</p>  
+
+
+            <h3>C++ Install IDE</h3>
+            <p>An IDE (Integrated Development Environment) is used to edit AND compile the code.</p>
+            <p>Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C++ code.</p>
+            <p><strong>Note:</strong> Web-based IDE's can work as well, but functionality is limited.</p>
+            <p>We will use <strong>Code::Blocks</strong> in our tutorial, which we believe is a good place to start.</p>
+            <p>You can find the latest version of Codeblocks at <a href="http://www.codeblocks.org/" target="_blank">http://www.codeblocks.org/</a>. Download the <code class="gray_bakcground_red_color">mingw-setup.exe</code> file, which will install the text editor with a compiler.</p>
+
+
+
+            <h3>C++ Quickstart</h3>
+            <p>Let's create our first C++ file.</p>
+            <p>Open Codeblocks and go to File > New > Empty File.</p>
+            <p>Write the following C++ code and save the file as <code class="gray_bakcground_red_color">myfirstprogram.cpp</code> <strong>(File > Save File as):</strong></p>
+            <pre class="this_is_code">
+                <code>
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  int main() {
+    cout << "Hello World!";
+    return 0;
+  }
+                </code>
+            </pre>
+            
+            <p>Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code.</p>
+            <p>In Codeblocks, it should look like this:</p>
+            <img src="img\codeblocks2020.png" alt="codeblocks2020">
+            <p>Then, go to <strong>Build > Build and Run</strong> to run (execute) the program. The result will look something to this:</p>
+            <pre class="this_is_code">
+                <code>
+  Hello World!
+  Process returned 0 (0x0) execution time : 0.011 s
+  Press any key to continue.
+                </code>
+            </pre>
+            
+            <p><strong>Congratulations!</strong> You have now written and executed your first C++ program.</p>
+
+
+
+            <h1 id="five">C++ Syntax</h1>
+            <p>Let's break up the following code to understand it better:</p>
+            
+            <pre class="this_is_code">
+                <code>
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  int main() {
+    cout << "Hello World!";
+    return 0;
+  }
+                </code>
+            </pre>
+            
+            <h3>Example explained</h3>
+
+            <p><strong>Line 1:</strong> <code class="gray_bakcground_red_color">#include &lt;iostream&gt;</code> is a <strong>header file library</strong> that lets us work with input and output objects, such as <code class="gray_bakcground_red_color">cout</code> (used in line 5). Header files add functionality to C++ programs.</p>
+
+            <p><strong>Line 2:</strong> <code class="gray_bakcground_red_color">using namespace std</code> means that we can use names for objects and variables from the standard library.</p>
+            
+                <p class="dont_worry">Don't worry if you don't understand how <code class="gray_bakcground_red_color">#include &lt;iostream&gt; </code> and <code class="gray_bakcground_red_color">using namespace std</code> works. Just think of it as something that (almost) always appears in your program.</p>
+
+            <p><strong>Line 3:</strong> A blank line. C++ ignores white space. But we use it to make the code more readable.</p>
+            <p><strong>Line 4:</strong> Another thing that always appear in a C++ program, is <code class="gray_bakcground_red_color">int main()</code>. This is called a <strong>function.</strong> Any code inside its curly brackets <code class="gray_bakcground_red_color">{}</code> will be executed.</p>
+            <p><strong>Line 5:</strong> <code class="gray_bakcground_red_color">cout</code> (pronounced "see-out") is an <strong>object</strong> used together with the insertion operator (<code class="gray_bakcground_red_color"><<</code>) to output/print text. In our example it will output "Hello World!".</p>
+
+            <p><strong>Note:</strong> Every C++ statement ends with a semicolon <code class="gray_bakcground_red_color">;</code>.</p>
+
+            <p><strong>Note:</strong> The body of <code class="gray_bakcground_red_color">int main()</code> could also been written as:<br/>
+<code class="gray_bakcground_red_color">int main () { cout << "Hello World! "; return 0; }</code></p>   
+
+            <p><strong>Remember:</strong> The compiler ignores white spaces. However, multiple lines makes the code more readable.</p>
+
+            <p><strong>Line 6:</strong> <code class="gray_bakcground_red_color">return 0</code> ends the main function.</p>
+
+            <p><strong>Line 7:</strong> Do not forget to add the closing curly bracket <code class="gray_bakcground_red_color">}</code> to actually end the main function.</p>
+                
+            <h3>Omitting Namespace</h3>
+            <p>You might see some C++ programs that runs without the standard namespace library. The <code class="gray_bakcground_red_color">using namespace std</code> line can be omitted and replaced with the <code class="gray_bakcground_red_color">std</code> keyword, followed by the <code class="gray_bakcground_red_color">::</code> operator for some objects:</p>
+            <pre class="this_is_code">
+                <code>
+  #include &lt;iostream&gt;
+
+  int main() {
+    std::cout << "Hello World!";
+    return 0;
+  }
+                </code>
+            </pre>
+
+            <p class="dont_worry">It is up to you if you want to include the standard namespace library or not.</p>
+            
+            <h1 id="six">C++ Output (Print Text)</h1>
+            <p>The <code class="gray_bakcground_red_color">cout</code> object, together with the <code class="gray_bakcground_red_color"><<</code> operator, is used to output values/print text:</p>
+            <pre class="this_is_code">
+                <code>
+  #include &lt;iostream&gt;
+
+  int main() {
+    cout << "Hello World!";
+    return 0;
+  }
+                </code>
+            </pre>
+            
+            <p>You can add as many <code class="gray_bakcground_red_color">cout</code> objects as you want. However, note that it does not insert a new line at the end of the output:</p>
+            <pre class="this_is_code">
+                <code>
+  #include &lt;iostream&gt;
+
+  int main() {
+    cout << "Hello World!";
+    cout << "I am learning C++";
+    return 0;
+  }
+            </code>
+            </pre>
+
+            <p><strong>Output:</strong></p>
+                
+            <pre class="this_is_code">
+                <code>
+  Hello World!I am learning C++
+                </code>
+            </pre>
+
+            <h3>New Lines</h3>
+            <p>To insert a new line, you can use the <code class="gray_bakcground_red_color">\n</code> character:</p>
+
+            <pre class="this_is_code">
+                <code>
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  int main() {
+    cout << "Hello World! \n";
+    cout << "I am learning C++";
+    return 0;
+  }                 
+                </code>
+            </pre>
+
+            <p><strong>Output:</strong></p>
+
+           <pre class="this_is_code">
+              <code>
+  Hello World!
+  I am learning C++     
+              </code>
+           </pre>
+
+           <p>Another way to insert a new line, is with the <code class="gray_bakcground_red_color">endl</code> manipulator:</p>
+
+           <pre class="this_is_code">
+            <code>
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  int main() {
+    cout << "Hello World!" << endl;
+    cout << "I am learning C++";
+    return 0;
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+
+           <pre class="this_is_code">
+              <code>
+  Hello World!
+  I am learning C++     
+              </code>
+           </pre>
+
+
+           <div class="dont_worry">
+            <p>Both <code class="gray_bakcground_red_color">\n</code> and <code class="gray_bakcground_red_color">endl</code> are used to break lines. However, <code class="gray_bakcground_red_color">\n</code> is most used.</p> 
+            <p style="font-size: 20px;">But what is <code class="gray_bakcground_red_color">\n</code> exactly?</p>
+            <p>The newline character (<code class="gray_bakcground_red_color">\n</code>) is called an escape sequence, and it forces the cursor to change its position to the beginning of the next line on the screen. This results in a new line.</p>
+            <p>Examples of other valid escape sequences are:</p>    
+            
+                <table>
+                  <tr>
+                    <th>Escape Sequence</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>\t</td>
+                    <td>Creates a horizontal tab</td>
+                  </tr>
+                  <tr>
+                    <td>\\</td>
+                    <td>Inserts a backslash character (\)</td>
+                  </tr>
+                  <tr>
+                    <td>\"</td>
+                    <td>Inserts a double quote character</td>
+                  </tr>
+                </table>
+
+           </div>
+
+
+           <h1 id="seven">C++ Variables</h1>
+           <!-- <h2>C++ Variables</h2> -->
+           <p>Variables are containers for storing data values.</p>
+           <p>In C++, there are different <strong>types</strong> of variables (defined with different keywords), for example:</p>
+           <ul>
+            <li><code class="gray_bakcground_red_color">int</code> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+            <li><code class="gray_bakcground_red_color">double</code> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+            <li><code class="gray_bakcground_red_color">char</code> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+            <li><code class="gray_bakcground_red_color">string</code> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+            <li><code class="gray_bakcground_red_color">bool</code> - stores values with two states: true or false</li>
+           </ul>
+
+           <h2>Declaring (Creating) Variables</h2>
+           <p>To create a variable, specify the type and assign it a value:</p>
+           <h3>Syntax</h3>
+
+           <pre class="this_is_code">
+            <code>
+  type variableName = value;    
+            </code>
+           </pre>
+
+           <p>Where type is one of C++ types (such as <code class="gray_bakcground_red_color">int</code>), and variableName is the name of the variable (such as <strong>x</strong> or <strong>myName</strong>). The <strong>equal sign</strong> is used to assign values to the variable.</p>
+
+           <p>To create a variable that should store a number, look at the following example:</p>
+
+           <h3>Example</h3>
+           <p>Create a variable called <strong>myNum</strong> of type <code class="gray_bakcground_red_color">int</code> and assign it the value <strong>15:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  int myNum = 15;
+  cout << myNum;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  15
+            </code>
+           </pre>
+
+           <h3>Example</h3>
+           <p>You can also declare a variable without assigning the value, and assign the value later:</p>  
+           <pre class="this_is_code">
+            <code>
+  int myNum;
+  myNum = 15;
+  cout << myNum;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  15
+            </code>
+           </pre>
+
+           <p>Note that if you assign a new value to an existing variable, it will overwrite the previous value:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int myNum = 15;  // myNum is 15
+  myNum = 10;  // Now myNum is 10
+  cout << myNum;  // Outputs 10
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  10
+            </code>
+           </pre>
+
+
+           <h2>Other Types</h2>
+           <p>A demonstration of other data types:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int myNum = 5;               // Integer (whole number without decimals)
+  double myFloatNum = 5.99;    // Floating point number (with decimals)
+  char myLetter = 'D';         // Character
+  string myText = "Hello";     // String (text)
+  bool myBoolean = true;       // Boolean (true or false)
+            </code>
+           </pre>
+
+           <h2>Display Variables</h2>
+           <p>The <code class="gray_bakcground_red_color">cout</code> object is used together with the <code class="gray_bakcground_red_color"><<</code> operator to display variables.</p>
+           <p>To combine both text and a variable, separate them with the <code class="gray_bakcground_red_color"><<</code> operator:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int myAge = 35;
+  cout << "I am " << myAge << " years old.";
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  I am 35 years old.
+            </code>
+           </pre>
+
+
+           <h2>Add Variables Together</h2>
+           <p>To add a variable to another variable, you can use the <code class="gray_bakcground_red_color">+</code> operator:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x = 5;
+  int y = 6;
+  int sum = x + y;
+  cout << sum;
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  11
+            </code>
+           </pre>
+
+
+           <h1 id="eight">C++ Declare Multiple Variables</h1>
+           <h2>Declare Many Variables</h2>
+           <p>To declare more than one variable of the <strong>same type</strong>, use a comma-separated list:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x = 5, y = 6, z = 50;
+  cout << x + y + z;
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  61
+            </code>
+           </pre>
+
+           <h2>One Value to Multiple Variables</h2>
+           <p>You can also assign the <strong>same value</strong> to multiple variables in one line:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x, y, z;
+  x = y = z = 50;
+  cout << x + y + z;
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  150
+            </code>
+           </pre>
+
+           <h1 id="nine">C++ Identifiers</h1>
+           <h2>C++ Identifiers</h2>
+           <p>All C++ <strong>variables</strong> must be <strong>identified</strong> with <strong>unique names.</strong></p>
+           <p>These unique names are called <strong>identifiers.</strong></p>
+           <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+           <p><strong>Note:</strong> It is recommended to use descriptive names in order to create understandable and maintainable code:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  // Good
+  int minutesPerHour = 60;
+
+  // OK, but not so easy to understand what m actually is
+  int m = 60;
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  60
+  60
+            </code>
+           </pre>
+           <p>The general rules for naming variables are:</p>
+           <ul>
+            <li>Names can contain letters, digits and underscores</li>
+            <li>Names must begin with a letter or an underscore (_)</li>
+            <li>Names are case sensitive (<code class="gray_bakcground_red_color">myVar</code> and <code class="gray_bakcground_red_color">myvar</code> are different variables)</li>
+            <li>Names cannot contain whitespaces or special characters like !, #, %, etc.</li>
+            <li>Reserved words (like C++ keywords, such as <code class="gray_bakcground_red_color">int</code>) cannot be used as names</li>
+           </ul>
+
+
+           <h1 id="ten">C++ Constants</h1>
+           <h2>Constants</h2>
+           <p>When you do not want others (or yourself) to change existing variable values, use the <code class="gray_bakcground_red_color">const</code> keyword (this will declare the variable as "constant", which means <strong>unchangeable and read-only</strong>):</p>
+
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  const int myNum = 15;  // myNum will always be 15
+  myNum = 10;  // error: assignment of read-only variable 'myNum'
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  In function 'int main()':
+  6.9: error: assignment of read-only variable 'myNum'
+            </code>
+           </pre>
+
+           <p>You should always declare the variable as constant when you have values that are unlikely to change:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  const int minutesPerHour = 60;
+  const float PI = 3.14;
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  60
+  3.14
+            </code>
+           </pre>
+
+
+           <h1 id="eleven">C++ User Input</h1>  
+           <p>You have already learned that <code class="gray_bakcground_red_color">cout</code> is used to output (print) values. Now we will use <code class="gray_bakcground_red_color">cin</code> to get user input.</p>    
+           <p><code class="gray_bakcground_red_color">cin</code> is a predefined variable that reads data from the keyboard with the extraction operator (<code class="gray_bakcground_red_color">>></code>).</p>
+           <p>In the following example, the user can input a number, which is stored in the variable <code class="gray_bakcground_red_color">x</code>. Then we print the value of <code class="gray_bakcground_red_color">x</code>:</p>
+
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x; 
+  cout << "Type a number: "; // Type a number and press enter
+  cin >> x; // Get user input from the keyboard
+  cout << "Your number is: " << x; // Display the input value
+            </code>
+           </pre>
+           <div class="dont_worry">
+            <h4>Good To Know</h4>
+            <p><code class="gray_bakcground_red_color">cout</code> is pronounced "see-out". Used for <strong>output</strong>, and uses the insertion operator (<code class="gray_bakcground_red_color"><<</code>)</p>
+            <p><code class="gray_bakcground_red_color">cin</code> is pronounced "see-in". Used for <strong>input</strong>, and uses the extraction operator (<code class="gray_bakcground_red_color">>></code>)</p>
+           </div>              
+
+           <h2>Creating a Simple Calculator</h2>
+           <p>In this example, the user must input two numbers. Then we print the sum by calculating (adding) the two numbers:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x, y;
+  int sum;
+  cout << "Type a number: ";
+  cin >> x;
+  cout << "Type another number: ";
+  cin >> y;
+  sum = x + y;
+  cout << "Sum is: " << sum;
+            </code>
+           </pre>
+           <p>There you go! You just built a basic calculator!</p>
+
+           <h1 id="twelve">C++ Data Types</h1>
+           <h2>C++ Data Types</h2>
+           <p>As explained in the Variables chapter, a variable in C++ must be a specified data type:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int myNum = 5;               // Integer (whole number)
+  float myFloatNum = 5.99;     // Floating point number
+  double myDoubleNum = 9.98;   // Floating point number
+  char myLetter = 'D';         // Character
+  bool myBoolean = true;       // Boolean
+  string myText = "Hello";     // String
+            </code>
+           </pre>
+
+           <h2>Basic Data Types</h2>
+           <p>The data type specifies the size and type of information the variable will store:</p>
+
+
+                <table>
+                  <tr>
+                    <th>Data Type</th>
+                    <th>Size</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td><code style="color: red">boolean</code></td>
+                    <td>1 byte</td>
+                    <td>Stores true or false values</td>
+                  </tr>
+                  <tr>
+                    <td><code style="color: red">char</code></td>
+                    <td>1 byte</td>
+                    <td>Stores a single character/letter/number, or ASCII values</td>
+                  </tr>
+                  <tr>
+                    <td><code style="color: red">int</code></td>
+                    <td>2 or 4 bytes</td>
+                    <td>Stores whole numbers, without decimals</td>
+                  </tr>
+                  <tr>
+                    <td><code style="color: red">float</code></td>
+                    <td>4 bytes</td>
+                    <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits</td>
+                  </tr>
+                  <tr>
+                    <td><code style="color: red">double</code></td>
+                    <td>8 bytes</td>
+                    <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits</td>
+                  </tr>                               
+                </table>
+
+                <p class="dont_worry">You will learn more about the individual data types in the next chapters.</p>
+
+            <h1>C++ Numeric Data Types</h1> 
+            <h2>Numeric Types</h2>
+            <p>Use <code class="gray_bakcground_red_color">int</code> when you need to store a whole number without decimals, like 35 or 1000, and <code class="gray_bakcground_red_color">float</code> or <code class="gray_bakcground_red_color">double</code> when you need a floating point number (with decimals), like 9.99 or 3.14515.</p>
+
+            <h3>int</h3>
+           <pre class="this_is_code">
+            <code>
+  int myNum = 1000;
+  cout << myNum;
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  1000
+            </code>
+           </pre>
+
+           <h3>float</h3>
+           <pre class="this_is_code">
+            <code>
+  float myNum = 5.75;
+  cout << myNum;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  5.75
+            </code>
+           </pre>
+
+           <h3>double</h3>
+           <pre class="this_is_code">
+            <code>
+  double myNum = 19.99;
+  cout << myNum;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  19.99
+            </code>
+           </pre>
+
+           <div class="dont_worry">
+            <p><code class="gray_bakcground_red_color">float</code> vs. <code class="gray_bakcground_red_color">double</code></p>
+            <p>The <strong>precision</strong> of a floating point value indicates how many digits the value can have after the decimal point. The precision of <code class="gray_bakcground_red_color">float</code> is only six or seven decimal digits, while <code class="gray_bakcground_red_color">double</code> variables have a precision of about 15 digits. Therefore it is safer to use <code class="gray_bakcground_red_color">double</code> for most calculations.</p>   
+           </div>
+           <h2>Scientific Numbers</h2>
+           <p>A floating point number can also be a scientific number with an "e" to indicate the power of 10:</p>
+
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  float f1 = 35e3;
+  double d1 = 12E4;
+  cout << f1;
+  cout << d1;
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  35000
+  120000
+            </code>
+           </pre>          
+
+           <h1>C++ Boolean Data Types</h1>
+           <h2>Boolean Types</h2>
+           <p>A boolean data type is declared with the <code class="gray_bakcground_red_color">bool</code> keyword and can only take the values <code class="gray_bakcground_red_color">true</code> or <code class="gray_bakcground_red_color">false</code>.</p>
+           <p>When the value is returned, <code class="gray_bakcground_red_color">true</code> = <code class="gray_bakcground_red_color">1</code> and <code class="gray_bakcground_red_color">false</code> = <code class="gray_bakcground_red_color">0</code>.</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  bool isCodingFun = true;
+  bool isFishTasty = false;
+  cout << isCodingFun;  // Outputs 1 (true)
+  cout << isFishTasty;  // Outputs 0 (false)
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  1
+  2
+            </code>
+           </pre>
+           <p class="dont_worry">Boolean values are mostly used for conditional testing, which you will learn more about in a later chapter.</p>
+
+           <h1>C++ Character Data Types</h1>
+           <h2>Character Types</h2>
+           <p>The <code class="gray_bakcground_red_color">char</code> data type is used to store a <strong>single</strong> character. The character must be surrounded by single quotes, like 'A' or 'c':</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  char myGrade = 'B';
+  cout << myGrade;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  B             
+            </code>
+           </pre>
+           <p>Alternatively, you can use ASCII values to display certain characters:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  char a = 65, b = 66, c = 67;
+  cout << a;
+  cout << b;
+  cout << c;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  ABC               
+            </code>
+           </pre>
+           <p><strong>Tip:</strong> A list of all ASCII values can be found in our ASCII Table Reference.</p>
+
+           <h1>C++ String Data Types</h1>
+           <h2>String Types</h2>
+           <p>The <code class="gray_bakcground_red_color">string</code> type is used to store a sequence of characters (text). This is not a built-in type, but it behaves like one in its most basic usage. String values must be surrounded by double quotes:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  string greeting = "Hello";
+  cout << greeting;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Hello
+            </code>
+           </pre>
+           <p>To use strings, you must include an additional header file in the source code, the <code class="gray_bakcground_red_color">&lt;string&gt;</code> library:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  // Include the string library
+  #include &lt;string&gt;
+
+  // Create a string variable
+  string greeting = "Hello";
+
+  // Output string value
+  cout << greeting;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Hello
+            </code>
+           </pre>
+           <p class="dont_worry">You will learn more about strings in W3School <a href="https://www.w3schools.com/cpp/cpp_strings.asp">C++ Strings Chapter</a>.</p>
+
+           <h1 id="thirteen">C++ Operators</h1>
+           <h2>C++ Operators</h2>
+           <p>Operators are used to perform operations on variables and values.</p>
+           <p>In the example below, we use the <code class="gray_bakcground_red_color">+</code> <strong>operator</strong> to add together two values:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x = 100 + 50;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  150
+            </code>
+           </pre>   
+           <p>Although the <code class="gray_bakcground_red_color">+</code> operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:</p>      
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int sum1 = 100 + 50;        // 150 (100 + 50)
+  int sum2 = sum1 + 250;      // 400 (150 + 250)
+  int sum3 = sum2 + sum2;     // 800 (400 + 400)
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  150
+  400
+  800
+            </code>
+           </pre>          
+
+           <h3>C++ divides the operators into the following groups:</h3>
+           <ul>
+            <li>Arithmetic operators</li>
+            <li>Assignment operators</li>
+            <li>Comparison operators</li>
+            <li>Logical operators</li>
+            <li>Bitwise operators</li>
+           </ul>
+           <h2>Arithmetic Operators</h2>
+             <p>Arithmetic operators are used to perform common mathematical operations.</p>
+
+           <table>
+                  <tr>
+                    <th><strong>Operator</strong></th>
+                    <th><strong>Name</strong></th>
+                    <th><strong>Description</strong></th>
+                    <th><strong>Example</strong></th>
+                  </tr>
+                  <tr>
+                    <td>+</td>
+                    <td>Addition</td>
+                    <td>Adds together two values</td>
+                    <td>x + y</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>Subtraction</td>
+                    <td>Subtracts one value from another</td>
+                    <td>x - y</td>
+                  </tr>
+                  <tr>
+                    <td>*</td>
+                    <td>Multiplication</td>
+                    <td>Multiplies two values</td>
+                    <td>x * y</td>
+                  </tr>
+                  <tr>
+                    <td>/</td>
+                    <td>Division</td>
+                    <td>Divides one value by another</td>
+                    <td>x / y</td>
+                  </tr>     
+                  <tr>
+                    <td>%</td>
+                    <td>Modulus</td>
+                    <td>Returns the division remainder</td>
+                    <td>x % y</td>
+                  </tr>
+                  <tr>
+                    <td>++</td>
+                    <td>Increment</td>
+                    <td>Increases the value of a variable by 1</td>
+                    <td>++x</td>
+                  </tr>
+                  <tr>
+                    <td>--</td>
+                    <td>Decrement</td>
+                    <td>Decreases the value of a variable by 1</td>
+                    <td>--x</td>
+                  </tr>                                                       
+             </table>
+
+             <h2>C++ Assignment Operators</h2>
+             <h3>Assignment Operators</h3>
+             <p>Assignment operators are used to assign values to variables.</p>
+             <p>In the example below, we use the <strong>assignment</strong> operator (<code class="gray_bakcground_red_color">=</code>) to assign the value <strong>10</strong> to a variable called <strong>x:</strong></p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x = 10;
+  cout << x;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  10
+            </code>
+           </pre>
+           <p>The <strong>addition assignment</strong> operator (<code class="gray_bakcground_red_color">+=</code>) adds a value to a variable:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x = 10;
+  x += 5;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  15
+            </code>
+           </pre>
+           <p>A list of all assignment operators:</p>           
+            <table>
+                  <tr>
+                    <th>Operator</th>
+                    <th>Example</th>
+                    <th>Same As</th>
+                  </tr>
+                  <tr>
+                    <td>=</td>
+                    <td>x = 5</td>
+                    <td>x = 5</td>
+                  </tr>
+                  <tr>
+                    <td>+=</td>
+                    <td>x += 3</td>
+                    <td>x = x + 3</td>
+                  </tr>
+                  <tr>
+                    <td>-=</td>
+                    <td>x -= 3</td>
+                    <td>x = x - 3</td>
+                  </tr>
+                  <tr>
+                    <td>*=</td>
+                    <td>x *= 3</td>
+                    <td>x = x * 3</td>
+                  </tr>
+                  <tr>
+                    <td>/=</td>
+                    <td>x /= 3</td>
+                    <td>x = x / 3</td>
+                  </tr>
+                  <tr>
+                    <td>%=</td>
+                    <td>x %= 3</td>
+                    <td>x = x % 3</td>
+                  </tr>
+                  <tr>
+                    <td>&=</td>
+                    <td>x &= 3</td>
+                    <td>x = x & 3</td>
+                  </tr>
+                  <tr>
+                    <td>|=</td>
+                    <td>x |= 3</td>
+                    <td>x = x | 3</td>
+                  </tr>
+                  <tr>
+                    <td>^=</td>
+                    <td>x ^= 3</td>
+                    <td>x = x ^ 3</td>
+                  </tr>
+                  <tr>
+                    <td>>>=</td>
+                    <td>x >>= 3</td>
+                    <td>x = x >> 3</td>
+                  </tr> 
+                  <tr>
+                    <td><<=</td>
+                    <td>x <<= 3</td>
+                    <td>x = x << 3</td>
+                  </tr>                                                               
+                </table>
+
+                <h2>C++ Comparison Operators</h2>
+                <h3>Comparison Operators</h3>
+                <p>Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.</p>
+                <p>The return value of a comparison is either <code class="gray_bakcground_red_color">1</code> or <code class="gray_bakcground_red_color">0</code>, which means <strong>true</strong> (1) or <strong>false</strong> (0). These values are known as <strong>Boolean values</strong>, and you will learn more about them in the Booleans and If..Else chapter.</p>
+                <p>In the following example, we use the <strong>greater than</strong> operator (<code class="gray_bakcground_red_color">></code>) to find out if 5 is greater than 3:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x = 5;
+  int y = 3;
+  cout << (x > y); // returns 1 (true) because 5 is greater than 3
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  1
+            </code>
+           </pre>
+           <p>A list of all comparison operators:</p>
+            <table>
+                  <tr>
+                    <th>Operator</th>
+                    <th>Name</th>
+                    <th>Example</th>
+                  </tr>
+                  <tr>
+                    <td>==</td>
+                    <td>Equal to</td>
+                    <td>x == y</td>
+                  </tr>
+                  <tr>
+                    <td>!=</td>
+                    <td>Not equal</td>
+                    <td>x != y</td>
+                  </tr>
+                  <tr>
+                    <td>></td>
+                    <td>Greater than</td>
+                    <td>x > y</td>
+                  </tr>
+                  <tr>
+                    <td><</td>
+                    <td>Less than</td>
+                    <td>x < y</td>
+                  </tr>
+                  <tr>
+                    <td>>=</td>
+                    <td>Greater than or equal to</td>
+                    <td>x >= y</td>
+                  </tr> 
+                  <tr>
+                    <td><=</td>
+                    <td>Less than or equal to</td>
+                    <td>x <= y</td>
+                  </tr>                                                               
+                </table>
+                <h2>C++ Logical Operators</h2>
+                <h3>Logical Operators</h3>
+                <p>As with comparison operators, you can also test for <strong>true</strong> (<code class="gray_bakcground_red_color">1</code>) or <strong>false</strong> (<code class="gray_bakcground_red_color">0</code>) values with <strong>logical operators</strong>.</p>
+                <p>Logical operators are used to determine the logic between variables or values:</p>
+            <table>
+                  <tr>
+                    <th>Operator</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                  </tr>
+                  <tr>
+                    <td>&&</td>
+                    <td>Logical and</td>
+                    <td>Returns true if both statements are true</td>
+                    <td>x < 5 &&  x < 10</td>
+                  </tr>
+                  <tr>
+                    <td>||</td>
+                    <td>Logical or</td>
+                    <td>Returns true if one of the statements is true</td>
+                    <td>x < 5 || x < 4</td>
+                  </tr>
+                  <tr>
+                    <td>!</td>
+                    <td>Logical not</td>
+                    <td>Reverse the result, returns false if the result is true</td>
+                    <td>!(x < 5 && x < 10)</td>
+                  </tr>
+                </table>
+                <h1 id="fourteen">C++ If ... Else</h1>
+                <h2>C++ Conditions and If Statements</h2>
+                <p>You already know that C++ supports the usual logical conditions from mathematics:</p>
+                <ul>
+                    <li>Less than: <code class="gray_bakcground_red_color">a < b</code></li>
+                    <li>Less than or equal to: <code class="gray_bakcground_red_color">a <= b</code></li>
+                    <li>Greater than: <code class="gray_bakcground_red_color">a > b</code></li>
+                    <li>Greater than or equal to: <code>a >= b</code></li>
+                    <li>Equal to <code class="gray_bakcground_red_color">a == b</code></li>
+                    <li>Not Equal to: <code class="gray_bakcground_red_color">a != b</code></li>
+                </ul>
+                <p>You can use these conditions to perform different actions for different decisions.</p>
+                <p>C++ has the following conditional statements:</p>
+                <ul>
+                    <li>Use <code class="gray_bakcground_red_color">if</code> to specify a block of code to be executed, if a specified condition is true</li>
+                    <li>Use <code class="gray_bakcground_red_color">else</code> to specify a block of code to be executed, if the same condition is false</li>
+                    <li>Use <code class="gray_bakcground_red_color">else if</code> to specify a new condition to test, if the first condition is false</li>
+                    <li>Use <code class="gray_bakcground_red_color">switch</code> to specify many alternative blocks of code to be executed</li>
+                </ul>
+                <h2>The if Statement</h2>
+                <p>Use the <code class="gray_bakcground_red_color">if</code> statement to specify a block of C++ code to be executed if a condition is <code class="gray_bakcground_red_color">true</code>.</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  if (condition) {
+    // block of code to be executed if the condition is true
+  }
+            </code>
+           </pre>
+            <p class="dont_worry">Note that <code class="gray_bakcground_red_color">if</code> is in lowercase letters. Uppercase letters (If or IF) will generate an error.</p>
+            <p>In the example below, we test two values to find out if 20 is greater than 18. If the condition is <code class="gray_bakcground_red_color">true</code>, print some text:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  if (20 > 18) {
+    cout << "20 is greater than 18";
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  20 is greater than 18
+            </code>
+           </pre>
+           <p>We can also test variables:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int x = 20;
+  int y = 18;
+  if (x > y) {
+    cout << "x is greater than y";
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  x is greater than y
+            </code>
+           </pre>
+           <p><strong>Example explained</strong></p>
+           <p>In the example above we use two variables, <strong>x</strong> and <strong>y</strong>, to test whether x is greater than y (using the <code class="gray_bakcground_red_color">></code> operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than y".</p>
+
+           <h1 id="fifteen">C++ Else</h1>
+           <h2>The else Statement</h2>
+           <p>Use the <code class="gray_bakcground_red_color">else</code> statement to specify a block of code to be executed if the condition is <code class="gray_bakcground_red_color">false</code>.</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  if (condition) {
+    // block of code to be executed if the condition is true
+  } else {
+    // block of code to be executed if the condition is false
+  }
+            </code>
+           </pre>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int time = 20;
+  if (time < 18) {
+    cout << "Good day.";
+  } else {
+    cout << "Good evening.";
+  }
+  // Outputs "Good evening."
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Good evening.
+            </code>
+           </pre>
+           <strong>Example explained</strong>
+             <p>In the example above, time (20) is greater than 18, so the condition is <code class="gray_bakcground_red_color">false</code>. Because of this, we move on to the <code class="gray_bakcground_red_color">else</code> condition and print to the screen "Good evening". If the time was less than 18, the program would print "Good day".</p>
+             <h1 id="sixteen">C++ Else If</h1>
+             <h2>The else if Statement</h2>
+             <p>Use the <code class="gray_bakcground_red_color">else if</code> statement to specify a new condition if the first condition is <code class="gray_bakcground_red_color">false</code>.</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  if (condition1) {
+    // block of code to be executed if condition1 is true
+  } else if (condition2) {
+    // block of code to be executed if the condition1 is false and condition2 is true
+  } else {
+    // block of code to be executed if the condition1 is false and condition2 is false
+  }
+            </code>
+           </pre>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int time = 22;
+  if (time < 10) {
+    cout << "Good morning.";
+  } else if (time < 20) {
+    cout << "Good day.";
+  } else {
+    cout << "Good evening.";
+  }
+  // Outputs "Good evening."
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Good evening
+            </code>
+           </pre>
+           <strong>Example explained</strong>
+             <p>In the example above, time (22) is greater than 10, so the <strong>first condition</strong> is <code class="gray_bakcground_red_color">false</code>. The next condition, in the <code class="gray_bakcground_red_color">else if</code> statement, is also <code class="gray_bakcground_red_color">false</code>, so we move on to the <code class="gray_bakcground_red_color">else</code> condition since <strong>condition1</strong> and <strong>condition2</strong> is both <code class="gray_bakcground_red_color">false</code> - and print to the screen "Good evening".</p>
+            <p>However, if the time was 14, our program would print "Good day."</p>
+            <h1 id="seventeen">C++ Short Hand If Else</h1>
+            <h2>Short Hand If...Else (Ternary Operator)</h2>
+            <p>There is also a short-hand if else, which is known as the <strong>ternary operator</strong> because it consists of three operands. It can be used to replace multiple lines of code with a single line. It is often used to replace simple if else statements:</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  variable = (condition) ? expressionTrue : expressionFalse;
+            </code>
+           </pre>
+           <p>Instead of writing:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int time = 20;
+  if (time < 18) {
+    cout << "Good day.";
+  } else {
+    cout << "Good evening.";
+  }
+  // Outputs "Good evening."  
+            </code>
+           </pre>
+           <p>You can simply write:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int time = 20;
+  string result = (time < 18) ? "Good day." : "Good evening.";
+  cout << result;
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Good evening.
+            </code>
+           </pre>
+           <h1 id="nineteen">C++ Switch</h1>
+           <h2>C++ Switch Statements</h2>
+           <p>Use the <code class="gray_bakcground_red_color">switch</code> statement to select one of many code blocks to be executed.</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  switch(expression) {
+    case x:
+      // code block
+      break;
+    case y:
+      // code block
+      break;
+    default:
+      // code block
+  }
+            </code>
+           </pre>
+           <p>This is how it works:</p>
+           <ul>
+            <li>The <code class="gray_bakcground_red_color">switch</code> expression is evaluated once</li>
+            <li>The value of the expression is compared with the values of each <code class="gray_bakcground_red_color">case</code></li>
+            <li>If there is a match, the associated block of code is executed</li>
+            <li>The <code class="gray_bakcground_red_color">break</code> and <code class="gray_bakcground_red_color">default</code> keywords are optional, and will be described later in this chapter</li>
+           </ul>
+           <p>The example below uses the weekday number to calculate the weekday name:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int day = 4;
+  switch (day) {
+    case 1:
+      cout << "Monday";
+      break;
+    case 2:
+      cout << "Tuesday";
+      break;
+    case 3:
+      cout << "Wednesday";
+      break;
+    case 4:
+      cout << "Thursday";
+      break;
+    case 5:
+      cout << "Friday";
+      break;
+    case 6:
+      cout << "Saturday";
+      break;
+    case 7:
+      cout << "Sunday";
+      break;
+  }
+  // Outputs "Thursday" (day 4)
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Thursday
+            </code>
+           </pre>
+           <h2>The break Keyword</h2>
+           <p>When C++ reaches a <code class="gray_bakcground_red_color">break</code> keyword, it breaks out of the switch block.</p>
+           <p>This will stop the execution of more code and case testing inside the block.</p>
+           <p>When a match is found, and the job is done, it's time for a break. There is no need for more testing.</p>
+           <p class="dont_worry">A break can save a lot of execution time because it "ignores" the execution of all the rest of the code in the switch block.</p>
+           <h2>The default Keyword</h2>
+           <p>The <code class="gray_bakcground_red_color">default</code> keyword specifies some code to run if there is no case match:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int day = 4;
+  switch (day) {
+    case 6:
+      cout << "Today is Saturday";
+      break;
+    case 7:
+      cout << "Today is Sunday";
+      break;
+    default:
+      cout << "Looking forward to the Weekend";
+  }
+  // Outputs "Looking forward to the Weekend"
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Looking forward to the Weekend
+            </code>
+           </pre>
+
+
+           <h1 id="tweenty">C++ While Loop</h1>
+           <h2>C++ Loops</h2>
+           <p>Loops can execute a block of code as long as a specified condition is reached.</p>
+           <p>Loops are handy because they save time, reduce errors, and they make code more readable.</p>
+           <h1>C++ While Loop</h1>
+           <p>The <code class="gray_bakcground_red_color">while</code> loop loops through a block of code as long as a specified condition is <code class="gray_bakcground_red_color">true</code>:</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  while (condition) {
+    // code block to be executed
+  }
+            </code>
+           </pre>          
+           <p>In the example below, the code in the loop will run, over and over again, as long as a variable (<code class="gray_bakcground_red_color">i</code>) is less than 5:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int i = 0;
+  while (i < 5) {
+    cout << i << "\n";
+    i++;
+  }
+            </code>
+           </pre>
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  0
+  1
+  2
+  3
+  4
+            </code>
+           </pre>
+           <p class="dont_worry"><strong>Note:</strong> Do not forget to increase the variable used in the condition, otherwise the loop will never end!</p>
+           <h1 id="tweenty_one">C++ Do/While Loop</h1>
+           <h2>The Do/While Loop</h2>
+           <p>The <code class="gray_bakcground_red_color">do/while</code> loop is a variant of the <code class="gray_bakcground_red_color">while</code> loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  do {
+    // code block to be executed
+  }
+  while (condition);
+            </code>
+           </pre>
+           <p>The example below uses a <code class="gray_bakcground_red_color">do/while</code> loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int i = 0;
+  do {
+    cout << i << "\n";
+    i++;
+  }
+  while (i < 5);
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  0
+  1
+  2
+  3
+  4
+            </code>
+           </pre>
+           <p class="dont_worry">Do not forget to increase the variable used in the condition, otherwise the loop will never end!</p>
+
+           <h1 id="tweenty_two">C++ For Loop</h1>
+           <h2>C++ For Loop</h2>
+           <p>When you know exactly how many times you want to loop through a block of code, use the <code class="gray_bakcground_red_color">for</code> loop instead of a <code class="gray_bakcground_red_color">while</code> loop:</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  for (statement 1; statement 2; statement 3) {
+    // code block to be executed
+  }
+            </code>
+           </pre>
+           <p><strong>Statement 1</strong> is executed (one time) before the execution of the code block.</p>
+           <p><strong>Statement 2</strong> defines the condition for executing the code block.</p>
+           <p><strong>Statement 3</strong> is executed (every time) after the code block has been executed.</p>
+           <p>The example below will print the numbers 0 to 4:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  for (int i = 0; i < 5; i++) {
+    cout << i << "\n";
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  0
+  1
+  2
+  3
+  4
+            </code>
+           </pre>          
+           <h3>Example explained</h3>
+           <p>Statement 1 sets a variable before the loop starts (int i = 0).</p>
+           <p>Statement 2 defines the condition for the loop to run (i must be less than 5). If the condition is true, the loop will start over again, if it is false, the loop will end.</p>
+           <p>Statement 3 increases a value (i++) each time the code block in the loop has been executed.</p>
+           <h2>Another Example</h2>
+           <p>This example will only print even values between 0 and 10:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  for (int i = 0; i <= 10; i = i + 2) {
+    cout << i << "\n";
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  0
+  2
+  4
+  6
+  8
+  10
+            </code>
+          </pre>    
+
+            <h2>Nested Loops</h2>
+            <p>It is also possible to place a loop inside another loop. This is called a <strong>nested loop</strong>.</p>
+            <p>The "inner loop" will be executed one time for each iteration of the "outer loop":</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  // Outer loop
+  for (int i = 1; i <= 2; ++i) {
+    cout << "Outer: " << i << "\n"; // Executes 2 times
+
+    // Inner loop
+    for (int j = 1; j <= 3; ++j) {
+      cout << " Inner: " << j << "\n"; // Executes 6 times (2 * 3)
+    }
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Outer: 1
+   Inner: 1
+   Inner: 2
+   Inner: 3
+  Outer: 2
+   Inner: 1
+   Inner: 2
+   Inner: 3
+            </code>
+           </pre>
+           <h3>The foreach Loop</h3>
+           <p>There is also a "<strong>for-each</strong> loop" (introduced in C++ version 11 (2011), which is used exclusively to loop through elements in an array (or other data sets):</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  for (type variableName : arrayName) {
+    // code block to be executed
+  }
+            </code>
+           </pre>
+           <p>The following example outputs all elements in an array, using a "<strong>for-each</strong> loop":</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int myNumbers[5] = {10, 20, 30, 40, 50};
+  for (int i : myNumbers) {
+    cout << i << "\n";
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  10
+  20
+  30
+  40
+  50
+            </code>
+           </pre>
+           <p class="dont_worry"><strong>Note:</strong> Don't worry if you don't understand the example above. You will learn more about arrays in the C++ Arrays chapter.</p>
+
+
+           <h1 id="tweenty_three">C++ Break and Continue</h1>
+           <h2>C++ Break</h2>
+           <p>You have already seen the <code class="gray_bakcground_red_color">break</code> statement used in an earlier chapter of this tutorial. It was used to "jump out" of a <code class="gray_bakcground_red_color">switch</code> statement.</p>
+           <p>The <code class="gray_bakcground_red_color">break</code> statement can also be used to jump out of a <strong>loop</strong>.</p>
+           <p>This example jumps out of the loop when <code class="gray_bakcground_red_color">i</code> is equal to 4:</p>
+
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  for (int i = 0; i < 10; i++) {
+    if (i == 4) {
+      break;
+    }
+    cout << i << "\n";
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  0
+  1
+  2
+  3
+            </code>
+           </pre>          
+           <h2>C++ Continue</h2>
+           <p>The <code class="gray_bakcground_red_color">continue</code> statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.</p>
+           <p>This example skips the value of 4:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  for (int i = 0; i < 10; i++) {
+    if (i == 4) {
+      continue;
+    }
+    cout << i << "\n";
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  0
+  1
+  2
+  3
+  5
+  6
+  7
+  8
+  9
+            </code>
+           </pre>
+           <h2>Break and Continue in While Loop</h2>
+           <p>You can also use <code>break</code> and <code>continue</code> in while loops:</p>
+           <h3>Break Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int i = 0;
+  while (i < 10) {
+    cout << i << "\n";
+    i++;
+    if (i == 4) {
+      break;
+    }
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  0
+  1
+  2
+  3
+            </code>
+           </pre>
+
+           <h3>Continue Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int i = 0;
+  while (i < 10) {
+    if (i == 4) {
+      i++;
+      continue;
+    }
+    cout << i << "\n";
+    i++;
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  0
+  1
+  2
+  3
+  5
+  6
+  7
+  8
+  9
+            </code>
+           </pre>
+           <h1 id="tweenty_four">C++ Arrays</h1>
+           <h2>C++ Arrays</h2>
+           <p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.</p>
+           <p>To declare an array, define the variable type, specify the name of the array followed by <strong>square brackets</strong> and specify the number of elements it should store:</p>
+           <pre class="this_is_code">
+            <code>
+  string cars[4];
+            </code>
+           </pre>
+           <p>We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:</p>
+           <pre class="this_is_code">
+            <code>
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+            </code>
+           </pre>          
+           <p>To create an array of three integers, you could write:</p>
+           <pre class="this_is_code">
+            <code>
+  int myNum[3] = {10, 20, 30};
+            </code>
+           </pre>   
+           <h1>Access the Elements of an Array</h1>
+           <p>You access an array element by referring to the index number inside square brackets <code class="gray_bakcground_red_color">[]</code>.</p>
+           <p>This statement accesses the value of the <strong>first element</strong> in <strong>cars</strong>:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  cout << cars[0];
+  // Outputs Volvo
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Volvo
+            </code>
+           </pre>
+           <p><strong>Note:</strong> Array indexes start with 0: [0] is the first element. [1] is the second element, etc.</p>
+           <h2>Change an Array Element</h2>
+           <p>To change the value of a specific element, refer to the index number:</p>
+           <pre class="this_is_code">
+            <code>
+  cars[0] = "Opel";
+            </code>
+           </pre>          
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  cars[0] = "Opel";
+  cout << cars[0];
+  // Now outputs Opel instead of Volvo
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  Opel
+            </code>
+           </pre>
+           <p class="dont_worry">You will learn more about Array in W3School <a href="https://www.w3schools.com/cpp/cpp_arrays.asp">C++ Array Chapter</a>.</p>
+           <h1 id="tweenty_five">C++ Functions</h1>
+           <p>A function is a block of code which only runs when it is called.</p>
+           <p>You can pass data, known as parameters, into a function.</p>
+           <p>Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.</p>
+           <h2>Create a Function</h2>
+           <p>C++ provides some pre-defined functions, such as <code class="gray_bakcground_red_color">main()</code>, which is used to execute code. But you can also create your own functions to perform certain actions.</p>
+           <p>To create (often referred to as declare) a function, specify the name of the function, followed by parentheses <strong>()</strong>:</p>
+           <h3>Syntax</h3>
+           <pre class="this_is_code">
+            <code>
+  void myFunction() {
+    // code to be executed
+  }
+            </code>
+           </pre>
+           <h3>Example Explained</h3>
+           <ul>
+            <li><code class="gray_bakcground_red_color">myFunction()</code> is the name of the function</li>
+            <li><code>void</code> means that the function does not have a return value. You will learn more about return values later in the next chapter</li>
+            <li>inside the function (the body), add code that defines what the function should do</li>
+           </ul>
+           <h2>Call a Function</h2>
+           <p>Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are called.</p>
+           <p>To call a function, write the function's name followed by two parentheses <code class="gray_bakcground_red_color">()</code> and a semicolon <code class="gray_bakcground_red_color">;</code></p>
+           <p>In the following example, <code class="gray_bakcground_red_color">myFunction()</code> is used to print a text (the action), when it is called:</p>
+           <h3>Example</h3>
+           <p>Inside <code class="gray_bakcground_red_color">main</code>, call <code class="gray_bakcground_red_color">myFunction()</code>:</p>
+           <pre class="this_is_code">
+            <code>
+  // Create a function
+  void myFunction() {
+    cout << "I just got executed!";
+  }
+
+  int main() {
+    myFunction(); // call the function
+    return 0;
+  }
+
+  // Outputs "I just got executed!"
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  I just got executed!
+            </code>
+           </pre>
+           <p>A function can be called multiple times:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  void myFunction() {
+    cout << "I just got executed!\n";
+  }
+
+  int main() {
+    myFunction();
+    myFunction();
+    myFunction();
+    return 0;
+  }
+
+  // I just got executed!
+  // I just got executed!
+  // I just got executed!
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  I just got executed!
+  I just got executed!
+  I just got executed!
+            </code>
+           </pre>
+           <h2>Function Declaration and Definition</h2>
+           <p>A C++ function consist of two parts:</p>
+           <ul>
+            <li><strong>Declaration:</strong> the return type, the name of the function, and parameters (if any)</li>
+            <li><strong>Definition:</strong> the body of the function (code to be executed)</li>
+           </ul>
+           <pre class="this_is_code">
+            <code>
+  void myFunction() { // declaration
+    // the body of the function (definition)
+  }
+            </code>
+           </pre>
+           <p><strong>Note:</strong> If a user-defined function, such as <code class="gray_bakcground_red_color">myFunction()</code> is declared after the <code class="gray_bakcground_red_color">main()</code> function, <strong>an error will occur</strong>:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  int main() {
+    myFunction();
+    return 0;
+  }
+
+  void myFunction() {
+    cout << "I just got executed!";
+  }
+
+  // Error
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  In function 'int main()':
+  5:3: error: 'myFunction' was not declared in this scope
+            </code>
+           </pre>
+           <p>However, it is possible to separate the declaration and the definition of the function - for code optimization.</p>
+           <p>You will often see C++ programs that have function declaration above <code class="gray_bakcground_red_color">main()</code>, and function definition below <code class="gray_bakcground_red_color">main()</code>. This will make the code better organized and easier to read:</p>
+           <h3>Example</h3>
+           <pre class="this_is_code">
+            <code>
+  // Function declaration
+  void myFunction();
+
+  // The main method
+  int main() {
+    myFunction();  // call the function
+    return 0;
+  }
+
+  // Function definition
+  void myFunction() {
+    cout << "I just got executed!";
+  }
+            </code>
+           </pre>
+
+           <p><strong>Output:</strong></p>
+           <pre class="this_is_code">
+            <code>
+  I just got executed!
+            </code>
+           </pre>
+           <h1 id="tweenty_six">Reference</h1>
+           <ul>
+            <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/cpp/default.asp" target="_blank">W3Schools</a></li>
+           </ul>        
+	</div>
+</body>
+</html>
